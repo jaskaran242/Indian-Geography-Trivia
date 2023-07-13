@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.indian_geography_trivia.GameModeController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="700.0" fitWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../images/IGT_BG.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="56.0" prefHeight="90.0" prefWidth="1300.0" text="Game Mode" textAlignment="CENTER" textFill="#c49800" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="70.0" />
+         </font>
+      </Label>
+      <Button fx:id="quizButton" alignment="CENTER" layoutX="334.0" layoutY="252.0" mnemonicParsing="false" onAction="#quizButtonPushed" onMouseEntered="#quizButtonEntered" onMouseExited="#quizButtonExited" prefHeight="47.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="Quiz" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="rapidFireButton" alignment="CENTER" layoutX="549.0" layoutY="252.0" mnemonicParsing="false" onAction="#rapidFireButtonPushed" onMouseEntered="#rapidFireButtonEntered" onMouseExited="#rapidFireButtonExited" prefHeight="63.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Rapid Fire" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="endlessButton" alignment="CENTER" layoutX="880.0" layoutY="252.0" mnemonicParsing="false" onAction="#endlessButtonPushed" onMouseEntered="#endlessButtonEntered" onMouseExited="#endlessButtonExited" prefHeight="63.0" prefWidth="157.0" style="-fx-background-color: transparent;" text="Endless" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backButton" layoutY="4.0" mnemonicParsing="false" onAction="#backButtonPushed" onMouseEntered="#backButtonEntered" onMouseExited="#backButtonExited" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="backButtonImageView" fitHeight="100.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/back_button_img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="quizInfoLabel" alignment="TOP_LEFT" layoutX="334.0" layoutY="363.0" prefHeight="200.0" prefWidth="400.0" textFill="#ffc300" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="rapidfireInfoLabel" alignment="TOP_LEFT" layoutX="549.0" layoutY="363.0" prefHeight="200.0" prefWidth="400.0" textFill="#ffc300" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="endlessInfoLabel" alignment="TOP_LEFT" layoutX="880.0" layoutY="363.0" prefHeight="200.0" prefWidth="400.0" textFill="#ffc300" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

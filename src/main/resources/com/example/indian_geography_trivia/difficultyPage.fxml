@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.indian_geography_trivia.DifficultyController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="700.0" fitWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../images/IGT_BG.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="66.0" prefHeight="90.0" prefWidth="1300.0" text="Difficulty" textAlignment="CENTER" textFill="#c49800" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="70.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutY="4.0" mnemonicParsing="false" onAction="#backButtonPushed" onMouseEntered="#backButtonEntered" onMouseExited="#backButtonExited" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0">
+         <graphic>
+            <ImageView fx:id="backButtonImageView" fitHeight="100.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/back_button_img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="beginnerButton" alignment="CENTER" layoutX="410.0" layoutY="252.0" mnemonicParsing="false" onAction="#beginnerButtonPushed" onMouseEntered="#beginnerButtonEntered" onMouseExited="#beginnerButtonExited" prefHeight="63.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Beginner" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="expertButton" alignment="CENTER" layoutX="730.0" layoutY="252.0" mnemonicParsing="false" onAction="#expertButtonPushed" onMouseEntered="#expertButtonEntered" onMouseExited="#expertButtonExited" prefHeight="63.0" prefWidth="144.0" style="-fx-background-color: transparent;" text="Expert" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="beginnerInfoLabel" alignment="TOP_LEFT" layoutX="410.0" layoutY="350.0" prefHeight="145.0" prefWidth="300.0" textFill="#ffc300" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="expertInfoLabel" alignment="TOP_LEFT" layoutX="730.0" layoutY="350.0" prefHeight="145.0" prefWidth="300.0" textFill="#ffc300" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

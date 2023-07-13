@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.indian_geography_trivia.ReadTopicController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="700.0" fitWidth="1300.0" layoutX="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../images/IGT_BG.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" prefHeight="90.0" prefWidth="1300.0" text="Topics" textAlignment="CENTER" textFill="#c49800" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="70.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutY="4.0" mnemonicParsing="false" onAction="#backButtonPushed" onMouseEntered="#backButtonEntered" onMouseExited="#backButtonExited" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="backButtonImageView" fitHeight="100.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/back_button_img.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <HBox layoutX="100.0" layoutY="138.0" prefHeight="500.0" prefWidth="1100.0">
+         <children>
+            <VBox prefHeight="500.0" prefWidth="550.0">
+               <children>
+                  <Button fx:id="topicButton1" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton1Pushed" onMouseEntered="#topicButton1Entered" onMouseExited="#topicButton1Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton2" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton2Pushed" onMouseEntered="#topicButton2Entered" onMouseExited="#topicButton2Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton3" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton3Pushed" onMouseEntered="#topicButton3Entered" onMouseExited="#topicButton3Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton4" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton4Pushed" onMouseEntered="#topicButton4Entered" onMouseExited="#topicButton4Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton5" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton5Pushed" onMouseEntered="#topicButton5Entered" onMouseExited="#topicButton5Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton6" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton6Pushed" onMouseEntered="#topicButton6Entered" onMouseExited="#topicButton6Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton7" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton7Pushed" onMouseEntered="#topicButton7Entered" onMouseExited="#topicButton7Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton8" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton8Pushed" onMouseEntered="#topicButton8Entered" onMouseExited="#topicButton8Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton9" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton9Pushed" onMouseEntered="#topicButton9Entered" onMouseExited="#topicButton9Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton10" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton10Pushed" onMouseEntered="#topicButton10Entered" onMouseExited="#topicButton10Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="500.0" prefWidth="550.0">
+               <children>
+                  <Button fx:id="topicButton11" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton11Pushed" onMouseEntered="#topicButton11Entered" onMouseExited="#topicButton11Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton12" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton12Pushed" onMouseEntered="#topicButton12Entered" onMouseExited="#topicButton12Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton13" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton13Pushed" onMouseEntered="#topicButton13Entered" onMouseExited="#topicButton13Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton14" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton14Pushed" onMouseEntered="#topicButton14Entered" onMouseExited="#topicButton14Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton15" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton15Pushed" onMouseEntered="#topicButton15Entered" onMouseExited="#topicButton15Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton16" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton16Pushed" onMouseEntered="#topicButton16Entered" onMouseExited="#topicButton16Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton17" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton17Pushed" onMouseEntered="#topicButton17Entered" onMouseExited="#topicButton17Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton18" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton18Pushed" onMouseEntered="#topicButton18Entered" onMouseExited="#topicButton18Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton19" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton19Pushed" onMouseEntered="#topicButton19Entered" onMouseExited="#topicButton19Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="topicButton20" alignment="CENTER" mnemonicParsing="false" onAction="#topicButton20Pushed" onMouseEntered="#topicButton20Entered" onMouseExited="#topicButton20Exited" prefHeight="50.0" prefWidth="550.0" style="-fx-background-color: transparent;" textFill="#c49800" wrapText="true">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="nextButton" alignment="CENTER" layoutX="1200.0" layoutY="649.0" mnemonicParsing="false" onAction="#nextButtonPushed" onMouseEntered="#nextButtonEntered" onMouseExited="#nextButtonExited" prefHeight="42.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="Next" textFill="#c49800" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="4.0">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="prevButton" alignment="CENTER" layoutX="1051.0" layoutY="653.0" mnemonicParsing="false" onAction="#prevButtonPushed" onMouseEntered="#prevButtonEntered" onMouseExited="#prevButtonExited" prefHeight="42.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="Prev" textFill="#c49800" AnchorPane.bottomAnchor="4.0">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="pgNoLabel" alignment="CENTER" layoutX="1133.0" layoutY="654.0" prefHeight="39.0" prefWidth="82.0" textAlignment="CENTER" textFill="#c49800" AnchorPane.bottomAnchor="4.0">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.indian_geography_trivia.HomeController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="700.0" fitWidth="1300.0" layoutX="-2.0" layoutY="-2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../images/IGT_BG.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutY="26.0" prefHeight="90.0" prefWidth="1300.0" textAlignment="CENTER" textFill="#c49800" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="70.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" alignment="CENTER" layoutX="1040.0" layoutY="167.0" mnemonicParsing="false" onAction="#playButtonPushed" onMouseEntered="#playButtonEntered" onMouseExited="#playButtonExited" prefHeight="50.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="Play" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="readButton" alignment="CENTER" layoutX="1034.0" layoutY="248.0" mnemonicParsing="false" onAction="#readButtonPushed" onMouseEntered="#readButtonEntered" onMouseExited="#readButtonExited" prefHeight="63.0" prefWidth="126.0" style="-fx-background-color: transparent;" text="Read" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="quitButton" alignment="CENTER" layoutX="1042.0" layoutY="582.0" mnemonicParsing="false" onAction="#quitButtonPushed" onMouseEntered="#quitButtonEntered" onMouseExited="#quitButtonExited" prefHeight="49.0" prefWidth="114.0" style="-fx-background-color: transparent;" text="Quit" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="factLabel" alignment="TOP_LEFT" layoutX="104.0" layoutY="411.0" prefHeight="200.0" prefWidth="400.0" textFill="#c49800" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="342.0" prefHeight="39.0" prefWidth="147.0" text="Fun Facts" textAlignment="CENTER" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="signOutButton" alignment="CENTER" layoutX="1013.0" layoutY="497.0" mnemonicParsing="false" onAction="#signOutButtonPushed" onMouseEntered="#signOutButtonEntered" onMouseExited="#signOutButtonExited" prefHeight="52.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="Sign Out" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="optionsButton" alignment="CENTER" layoutX="1021.0" layoutY="330.0" mnemonicParsing="false" onAction="#optionsButtonPushed" onMouseEntered="#optionsButtonEntered" onMouseExited="#optionsButtonExited" prefHeight="63.0" prefWidth="154.0" style="-fx-background-color: transparent;" text="Options" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="highScoreButton" alignment="CENTER" layoutX="987.0" layoutY="411.0" mnemonicParsing="false" onAction="#highScoreButtonPushed" onMouseEntered="#highScoreButtonEntered" onMouseExited="#highScoreButtonExited" prefHeight="63.0" prefWidth="219.0" style="-fx-background-color: transparent;" text="High Scores" textFill="#c49800">
+         <font>
+            <Font name="Modern No. 20" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

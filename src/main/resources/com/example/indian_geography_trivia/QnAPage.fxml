@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.indian_geography_trivia.QnAController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="700.0" fitWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../images/IGT_BG.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutX="125.0" layoutY="42.0" prefHeight="216.0" prefWidth="1002.0">
+         <top>
+            <Rectangle fill="#9c7700" height="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1050.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Rectangle fill="#9c7700" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Rectangle fill="#9c7700" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Rectangle fill="#9c7700" height="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1050.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="questionLabel" alignment="CENTER" layoutX="371.0" layoutY="100.0" prefWidth="1060.0" style="-fx-background-color: BLACK;" text="Question" textAlignment="CENTER" textFill="#c49800" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Modern No. 20" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <Button fx:id="optionA" layoutX="140.0" layoutY="290.0" mnemonicParsing="false" onAction="#optionAPushed" prefHeight="165.0" prefWidth="440.0" style="-fx-shape: &quot;M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0&quot;; -fx-background-color: BLACK; -fx-border-color: #9c7700; -fx-border-width: 5;" text="Option A" textFill="#c49800" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="quitButton" alignment="CENTER" mnemonicParsing="false" onAction="#quitButtonPushed" onMouseEntered="#quitButtonEntered" onMouseExited="#quitButtonExited" prefHeight="20.0" prefWidth="79.0" style="-fx-background-color: transparent;" text="Quit" textFill="#c49800" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="optionC" layoutX="140.0" layoutY="500.0" mnemonicParsing="false" onAction="#optionCPushed" prefHeight="165.0" prefWidth="440.0" style="-fx-shape: &quot;M 100, 100        m -75, 0        a 75,75 0 1,0 150,0        a 75,75 0 1,0 -150,0&quot;; -fx-background-color: BLACK; -fx-border-color: #9c7700; -fx-border-width: 5;" text="Option C" textFill="#c49800" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="optionB" layoutX="720.0" layoutY="290.0" mnemonicParsing="false" onAction="#optionBPushed" prefHeight="165.0" prefWidth="440.0" style="-fx-shape: &quot;M 100, 100        m -75, 0        a 75,75 0 1,0 150,0        a 75,75 0 1,0 -150,0&quot;; -fx-background-color: BLACK; -fx-border-color: #9c7700; -fx-border-width: 5;" text="Option B" textFill="#c49800" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="optionD" layoutX="720.0" layoutY="500.0" mnemonicParsing="false" onAction="#optionDPushed" prefHeight="165.0" prefWidth="440.0" style="-fx-shape: &quot;M 100, 100        m -75, 0        a 75,75 0 1,0 150,0        a 75,75 0 1,0 -150,0&quot;; -fx-background-color: BLACK; -fx-border-color: #9c7700; -fx-border-width: 5;" text="Option D" textFill="#c49800" wrapText="true">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="confirmButton" alignment="CENTER" layoutX="10.0" layoutY="668.0" mnemonicParsing="false" onAction="#confirmButtonPushed" onMouseEntered="#confirmButtonEntered" onMouseExited="#confirmButtonExited" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: transparent;" text="Confirm" textFill="#c49800" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="nextButton" alignment="CENTER" layoutX="1192.0" layoutY="668.0" mnemonicParsing="false" onAction="#nextButtonPushed" onMouseEntered="#nextButtonEntered" onMouseExited="#nextButtonExited" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: transparent;" text="Next" textFill="#c49800" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="questionNoLabel" layoutX="125.0" prefHeight="42.0" prefWidth="170.0" text="Q :  0 / 0" textFill="#c49800" AnchorPane.bottomAnchor="658.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLimitLabel" alignment="CENTER" layoutX="598.0" layoutY="462.0" prefHeight="42.0" prefWidth="101.0" text="0 : 0" textFill="#c49800" AnchorPane.bottomAnchor="196.0" AnchorPane.topAnchor="462.0">
+         <font>
+            <Font name="Modern No. 20" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameModeLabel" alignment="CENTER" layoutX="434.0" prefHeight="42.0" prefWidth="430.0" textFill="#c49800" AnchorPane.bottomAnchor="658.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" alignment="CENTER_RIGHT" layoutX="965.0" prefHeight="42.0" prefWidth="210.0" text="Score :  0" textFill="#c49800" AnchorPane.bottomAnchor="658.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoLabel" alignment="CENTER" layoutX="301.0" layoutY="258.0" prefHeight="32.0" prefWidth="700.0" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Modern No. 20" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
